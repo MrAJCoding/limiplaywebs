@@ -1,90 +1,117 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>LimiPlay</title>
-    
-    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Patrick+Hand&family=Aguafina+Script&family=Dancing+Script&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+  <meta charset="UTF-8">
+  <title>LimiPlay</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Patrick+Hand&family=Aguafina+Script&family=Dancing+Script&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-      body {
-        margin: 0;
-        background: linear-gradient(to right, #1fe8f1 0%, #4393ff 100%);
-      }
-      h1 {
-        font-family: 'ADLaM Display';
-        font-size: 70px;
-        margin-top: 60px;
-      }
-      .hero p {
-        font-family: 'Patrick Hand';
-        font-size: 22px;
-        max-width: 800px;
-        margin: 20px auto;
-        line-height: 1.6;
-      }
-      .hero a {
-        color: white;
-        font-family: 'Patrick Hand';
-      }
-      .navbar {
-        background-color: white;
-        padding: 15px;
-        position: fixed;
-      }
-      .navbar a {
-        margin: 0 20px;
-        text-decoration: none;
-        color: black;
-        font-weight: bold;
-      }
-      .navbar a:hover {
-        text-decoration: underline;
-      }
-      .lp-section {
-        padding: 40px 0;
-      }
-      .lp-section img {
-        max-width: 500px;
-        width: 90%
-      }
-      footer {
-        padding: 15px;
-        font-size: 10pt;
-      }
-    </style>
+  <style>
+    body {
+      margin: 0;
+      background: linear-gradient(to right, #1fe8f1 0%, #4393ff 100%);
+    }
 
+    /* NAVBAR FIX */
+    .navbar {
+      background-color: white;
+      padding: 15px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      box-sizing: border-box;
+      z-index: 1000;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .navbar a {
+      margin: 0 20px;
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+
+    .navbar a:hover {
+      text-decoration: underline;
+    }
+
+    /* Push content down so it doesn't go under fixed navbar */
+    .hero {
+      margin-top: 80px;
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1 {
+      font-family: 'ADLaM Display';
+      font-size: 70px;
+    }
+
+    .hero p {
+      font-family: 'Patrick Hand';
+      font-size: 22px;
+      max-width: 800px;
+      margin: 20px auto;
+      line-height: 1.6;
+    }
+
+    .hero a {
+      color: white;
+      font-family: 'Patrick Hand';
+    }
+
+    .lp-section {
+      padding: 40px 0;
+      text-align: center;
+    }
+
+    .lp-section img {
+      max-width: 500px;
+      width: 90%;
+    }
+
+    footer {
+      padding: 15px;
+      font-size: 10pt;
+      text-align: center;
+    }
+
+  </style>
 </head>
- <body>
-    
-    <!-- Navigation -->
-    <nav class="navbar">
-        <a href="index.html">Home</a>
-        <a href="songs.html">Songs</a>
-        <a href="https://www.limiplake.com" target="_blank">LimiPlake Website</a>
-    </nav>
 
-    <!-- Main Section -->
-    <section class="hero">
-        <h1>LimiPlay</h1>
+<body>
+  
+  <!-- Navigation -->
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="songs.html">Songs</a>
+    <a href="https://www.limiplake.com" target="_blank">LimiPlake Website</a>
+  </nav>
 
-        <p>
-            LimiPlay is the piano aspect of <a href="https://limiplake.com" target="_blank">LimiPlake</a>.
-            It was actually created from a poster the founder made in kindergarten saying,
-            “GROWING UP: When I grow up, I want to be a Piano Teacher.”
-            (It was an assignment.)
-        </p>
-    </section>
+  <!-- Main Section -->
+  <section class="hero">
+    <h1>LimiPlay</h1>
 
-    <!-- LP Image Section -->
-    <section class="lp-section">
-        <img src="lp.png" alt="LimiPlay LP Logo">
-    </section>
+    <p>
+      LimiPlay is the piano aspect of 
+      <a href="https://limiplake.com" target="_blank">LimiPlake</a>.
+      It was actually created from a poster the founder made in kindergarten saying,
+      “GROWING UP: When I grow up, I want to be a Piano Teacher.”
+      (It was an assignment.)
+    </p>
+  </section>
 
-    <!-- Footer -->
-    <footer>
-        Copyright © 2025 by LimiPlake
-    </footer>
- </body>
+  <!-- LP Image Section -->
+  <section class="lp-section">
+    <img src="lp.png" alt="LimiPlay LP Logo">
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    Copyright © 2025 by LimiPlake
+  </footer>
+
+</body>
 </html>
